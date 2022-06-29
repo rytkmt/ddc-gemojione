@@ -8,7 +8,7 @@ import {
 import {
   GatherCandidatesArguments,
 } from "https://deno.land/x/ddc_vim@v0.17.0/base/source.ts#^";
-import json from "./data.ts"
+import json from "./emojis_data.ts"
 
 type Gemojione = {
   code:        string;
