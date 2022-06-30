@@ -8,7 +8,7 @@ json = JSON.parse(res)
 emojis = []
 json.values.each do |emoji|
   push = lambda do |code|
-    emojis << { code: code, name: emoji["moji"] }
+    emojis << { code: code, name: code + " " + emoji["moji"] }
   end
 
   push.(emoji["shortname"])
